@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SkyChev Flight Booking App
 
-## Available Scripts
+SkyChev is a flight booking application built with React and Chakra UI. This application allows users to search for flights, view popular destinations, and manage their bookings.
 
-In the project directory, you can run:
+## Table of Contents
+- [Installation](#installation)
+- [Components](#components)
+- [Folder Structure](#folder-structure)
+- [Images](#installation)
+- [License](#license)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started with the project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository:**
 
-### `npm test`
+    ```bash
+    git clone https://github.com/5reeram/FlightBooking.git
+    cd FlightBooking
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies:**
 
-### `npm run build`
+    Make sure you have [Node.js](https://nodejs.org/) installed. Then, install the project dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Run the development server:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Start the development server and open the app in your browser:
 
-### `npm run eject`
+    ```bash
+    npm start
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    The application should be running at [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Header
 
-## Learn More
+Displays the navigation bar with the logo, sign up, and login buttons.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### SearchBar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Provides input fields for searching flights including departure and arrival cities, dates, and passenger details.
 
-### Code Splitting
+### PopularDestinations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Shows a grid of popular destinations with images, city names, countries, and prices.
 
-### Analyzing the Bundle Size
+### FlightOptions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Lists available flight options with details like departure and arrival times, durations, prices, and a booking button.
 
-### Making a Progressive Web App
+### Footer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Displays additional information and links related to the company, booking policies, and customer support.
 
-### Advanced Configuration
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Here's an overview of the project's folder structure:
 
-### Deployment
+```
+FlightBooking/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── SearchBar.js
+│   │   ├── PopularDestinations.js
+│   │   ├── FlightOptions.js
+│   │   └── Footer.js
+│   ├── photos/
+│   │   ├── canada.jpeg
+│   │   ├── delhi.jpeg
+│   │   ├── sydney.jpeg
+│   │   └── switzerland.jpeg
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##Images
 
-### `npm run build` fails to minify
+![image](https://github.com/user-attachments/assets/cea5eee7-a100-45c4-85b1-dd8a2c3849b7)
+![image](https://github.com/user-attachments/assets/7f737693-1de1-4c81-b056-426361fc1bcb)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
